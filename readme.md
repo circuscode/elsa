@@ -165,6 +165,6 @@ This project is licensed under the GPL3 License.
 
 ### 100
 
-Released: XX.XX.2024
+Release: 27.06.2024
 
 * Initial Theme Release
