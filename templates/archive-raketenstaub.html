@@ -1,0 +1,56 @@
+<!-- wp:template-part {"slug":"header","theme":"elsa","tagName":"header","area":"header"} /-->
+
+<!-- wp:spacer {"height":"4rem"} -->
+<div style="height:4rem" aria-hidden="true" class="wp-block-spacer">
+</div>
+<!-- /wp:spacer -->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"layout":{"type":"constrained","justifyContent":"center"}} -->
+<main class="wp-block-group">
+
+<!-- wp:heading {"level":1,"className":"invisible"} -->
+<h1 class="wp-block-heading invisible">Raketenstaub</h1>
+<!-- /wp:heading -->
+    
+<!-- wp:query {"queryId":10,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-query alignwide">
+        
+    <!-- wp:post-template -->
+
+    <!-- wp:group {"tagName":"article","metadata":{"name":"Beitrag"},"style":{"spacing":{"blockGap":"15px"}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"1280px","contentSize":"1000px"}} -->
+    <article class="wp-block-group">
+
+        <!-- wp:post-title /-->
+
+        <!-- wp:post-featured-image {"isLink":true} /-->
+
+        <!-- wp:post-date {"style":{"spacing":{"margin":{"top":"1rem"}}},"fontSize":"small"} /-->
+
+        <!-- wp:post-terms {"term":"post_tag","separator":"","fontSize":"small"} /-->
+
+        <!-- wp:post-terms {"term":"fotoalbum","fontSize":"small"} /-->
+
+        <!-- wp:spacer {"height":"5rem"} -->
+        <div style="height:5rem" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+
+    </article>
+    <!-- /wp:group -->
+
+    <!-- /wp:post-template -->
+
+    <!-- wp:spacer {"height":"4rem"} -->
+    <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:query-pagination -->
+    <!-- wp:query-pagination-numbers {"midSize":2} /-->
+    <!-- /wp:query-pagination -->
+
+</div>
+<!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"elsa","tagName":"footer","area":"footer"} /-->

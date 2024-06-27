@@ -1,0 +1,1090 @@
+/*---------------
+Table of Contents
+-----------------
+0  - Preample
+1  - General
+2  - Navigation
+3  - Search
+4  - More
+5  - Loop
+6  - Pagination
+7  - Text
+8  - Comments
+9  - Meta
+10 - Ello
+11 - Post Formats
+12 - Envira
+13 - Boxes
+14 - Creative Commons
+15 - Listen
+16 - Images
+17 - Quotes
+18 - Embed Privacy
+19 - Tables
+20 - Individual Post Related
+21 - iframe
+22 - Featured Image
+23 - Video
+24 - Pinseldisko
+25 - Podcast
+26 - Raketenstaub
+27 - WordPress
+28 - TootPress
+29 - Mathilda
+30 - Archives
+---------------*/
+
+/*
+0. Preample
+
+Elsa Breakpoint Mobile = 1100px
+WordPress Breakpoint Mobile = 600px
+
+*/
+
+/*
+1. General
+*/
+
+.invisible {
+    display:none;
+}
+
+/*
+2. Navigation
+*/
+
+/* Set Breakpoint for Mobile Navigation to 1000 Pixel */ 
+
+/* New Breakpoint */
+@media ( min-width: 1100px ) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: none !important;
+    }
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: block !important;
+    }
+}
+/* Old Breakpoint (Neuralize) */
+@media ( min-width: 600px ) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: flex;
+    }
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: none;
+    }
+}
+
+/*
+3. Search
+*/
+
+/* Search Toogle Styling */
+
+.search-toggle {
+  display:block;
+  text-decoration: none;
+  border-bottom-width:2px;
+  border-bottom-color:transparent;
+  border-bottom-style:solid;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+}
+.search-toggle:hover {
+  border-bottom-color:currentColor;
+}
+
+/* Do not show the Search Toogle on Mobile */
+
+@media ( max-width: 1100px ) {
+  .search-toggle {
+    display:none;
+  }
+}
+
+/* Display Search Icon @ Input Field */ 
+
+.wp-block-search__input {
+  background-color: white;
+  background-image: url("../svg/search-icon.svg");
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+/* Visibility Search Input Field */ 
+
+@media ( min-width: 1100px ) {
+
+  /* Standard Hide @ Desktop */
+  .menu-search {
+    display: none !important;
+  }
+
+  /* Show always @ Mobile View is open */
+  .is-menu-open .menu-search{
+    display: block !important;
+  }
+
+  /* Show @ Toggle is clicked */
+  .show-desktop-search .menu-search {
+    display: block !important;
+  }
+
+}
+/* Content Search */
+.content-search {
+  display: block !important;
+}
+
+/* Input Field Position */
+
+/* @Mobile */
+.is-menu-open .menu-search {
+  display: block !important;
+  position:static !important;
+}
+/* @Desktop */
+.show-desktop-search .menu-search {
+  position: absolute;
+  top: 2.2rem;
+  right: -4.1rem;
+  z-index: 2000;
+}
+
+/* No Blue Box on Activation */
+
+input[type=search]:focus {
+  outline: none;
+}
+
+/* Fix Layout @ Mozilla */
+
+.wp-block-search__inside-wrapper {
+  height: 2.5rem;
+}
+
+/*
+4. More
+*/
+
+/* Hide More Link (embedded in Content) */
+
+.more-link {
+  display:none;
+}
+
+/* Hide including Paragraph from Classic Editor */
+
+p:has(.more-link) {
+  display:none;
+}
+
+/* More Link (embedded in Template) */
+
+.wp-block-read-more {
+  color:black;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  line-height: 1.4rem;
+  padding-top:0rem;
+  margin-top:1.1rem !important;
+}
+
+/*
+5. Loop
+*/
+
+.wp-block-post:last-child .wp-block-spacer {
+  display:none;
+}
+
+/*
+6. Pagination
+*/
+
+.wp-block-query-pagination-numbers * {
+  margin-right:30px;
+}
+
+.wp-block-query-pagination-numbers .current {
+  font-weight: 700;
+}
+
+/* 
+7. Text
+*/
+
+/* Single: (Margin) Title > First Paragraph */
+
+.single-post h1,
+.single-ello h1,
+.single-podcast h1 {
+  margin-bottom:-0.8rem;
+}
+.page h1 {
+  margin-bottom:-0.5rem;
+}
+.error404 h1 {
+  margin-bottom:-1rem;
+}
+
+
+/* Index Archives: (Margin) Title > First Paragraph */
+
+.home h2,
+.post-type-archive-ello h2,
+.post-type-archive-pinseldisko h2,
+.post-type-archive-podcast h2 {
+  margin-bottom:-0.25rem !important;
+}
+
+/* Single Post: (Margin) Previous Element > hX */
+
+.single-post h2,
+.single-ello h2,
+.single-podcast h2,
+.page h2 {
+  margin-top:2.5rem;
+}
+.single-post h3,
+.single-ello h3,
+.single-podcast h3,
+.page h3 {
+  margin-top:1.5rem;
+}
+
+/* Archive Podcast: (Margin) Previous Element > hX */
+
+.post-type-archive-podcast h3 {
+  margin-top:2.5rem;
+}
+
+/* Single Post: (Margin) hX > Next Paragraph */
+
+.single-post h2 + p,
+.single-ello h2 + p,
+.single-podcast h2 + p,
+.page h2 + p,
+.single-post h3 + p,
+.single-ello h3 + p,
+.single-podcast h3 + p,
+.page h3 + p {
+  margin-top:0.2rem;
+}
+
+/* Archive Podcast: hX > Next Paragraph */
+
+.post-type-archive-podcast h3 + p {
+  margin-top:0.2rem;
+}
+
+/* Single Post: (Margin) Image > hX */
+
+.single-post figure + h2,
+.single-ello figure + h2,
+.single-post figure + h3,
+.single-ello figure + h3,
+.page figure + h3 {
+  margin-top:3rem;
+}
+
+/* 
+8. Comments
+*/
+
+/* Autor Name Link */
+
+.wp-block-comment-author-name a {
+  color:black;
+  text-decoration: none;
+  border-bottom: 1px transparent #000;
+}
+
+/* Submit Button */
+
+.comment-form .form-submit input#submit
+{
+  border-radius:0;
+  border: 1px solid #000 !important;
+  color:black;
+  background-color: white;
+}
+
+/* Comment Form Labels */
+
+.comment-form label,
+.comment-form .logged-in-as {
+  display:none;
+}
+
+.comment-form .lstc-label {
+  display:inline;
+  position:relative;
+  top:2px;
+  left:2px;
+}
+.comment-notes {
+  margin:0;
+}
+
+/* Comment Form Title */
+
+.comment-reply-title {
+  font-weight: 700;
+  text-transform:uppercase;
+  letter-spacing: 2.5px;
+}
+
+/* Comment Title */
+
+.wp-block-comments-title {
+  font-weight: 700;
+  text-transform:uppercase;
+  letter-spacing: 2.5px;
+}
+
+/* Spacing between Date and Comment */
+
+.wp-block-comment-content,
+.wp-block-comment-content p {
+  margin-top:0.7rem !important;
+}
+
+/* Spacing between Comment Form and last Comment */
+
+.wp-block-comment-template li:last-of-type {
+  margin-bottom:4rem;
+}
+
+/* 
+9. Meta
+*/
+
+/* Timestamp: italic */
+
+.meta time {
+  font-style: italic;
+}
+
+/* Links @ Terms&Category: black, not underlined, italic */
+
+.meta a {
+  font-style: italic;
+  color:black;
+  text-decoration: none;
+  border-bottom: 0px transparent #000;
+}
+
+/* 
+10. Ello
+*/
+
+/* Title Date Link */
+
+.elsa-titledate a {
+  color:black;
+  text-decoration: none;
+  border-bottom: 0px transparent #000;
+}
+
+.elsa-aocb {
+	display: inline-block;
+	margin-block-start: 24px !important;
+	cursor: pointer;
+	background: #000;
+	color: rgba(255, 255, 255, 0.85);
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none !important;
+	padding: 5px 8px;
+	font-size: 0.7rem;
+  line-height: 1rem;;
+}
+
+.elsa-aocb a {
+	color: white;
+  text-decoration: none;;
+	border: none;
+}
+
+.zimtstaub
+{
+	background-color:#ac1b1b !important;
+}
+
+/* 
+11. Post Formats
+*/
+
+/* No Headline & Link in Archive */
+
+.post-type-archive-ello .format-quote h1,
+.post-type-archive-ello .format-quote .elsa-aocb,
+.post-type-archive-ello .format-image .elsa-aocb {
+  display:none;
+}
+
+/* Post Format Quote */
+
+.format-quote blockquote {
+  margin:0 !important;
+}
+.format-quote p {
+  font-size:1.5rem;
+}
+.format-quote cite {
+  font-size:0.9rem;
+  display:block;
+}
+
+/* Single Ello Post Format View */
+
+.single-ello.single-format-quote h1,
+.single-ello.single-format-quote .meta,
+.single-ello.single-format-quote .about,
+.single-ello.single-format-quote .wp-block-comments,
+.single-ello.single-format-image .h1,
+.single-ello.single-format-image .meta,
+.single-ello.single-format-image .about,
+.single-ello.single-format-image .wp-block-comments {
+  display:none;
+}
+
+/* 
+12. Envira
+*/
+
+/* Legacy: Evira Gallery ShortCode */
+
+.envira-gallery-wrap {
+  margin-top:1.7rem;
+}
+
+/* 
+13. Boxes (Legacy)
+*/
+
+/* Legacy: Basic Formats */
+
+.white-box,
+.blue-box,
+.yellow-box,
+.red-box,
+.green-box,
+.lightgrey-box,
+.grey-box,
+.dark-box {
+	margin: 1.7rem 0 1.7rem;
+	padding: 1.2rem;
+	line-height:1.55;
+}
+
+/* Legacy: Spacing to aocb Button (if Box is last Element in Post) */
+
+.post-type-archive-ello .white-box:last-child,
+.post-type-archive-ello .blue-box:last-child,
+.post-type-archive-ello .yellow-box:last-child,
+.post-type-archive-ello .red-box:last-child,
+.post-type-archive-ello .green-box:last-child,
+.post-type-archive-ello .lightgrey-box:last-child,
+.post-type-archive-ello .grey-box:last-child,
+.post-type-archive-ello .dark-box:last-child {
+margin-bottom:0.7rem !important;
+}
+
+/* Legacy: Colors & Borders */
+
+.white-box {background: #fff; border: 2px solid #ddd;}
+.blue-box {background: #eef6fe;}
+.yellow-box {background: #ffffcc;}
+.red-box {background: #fff0f1;}
+.green-box {background: #e7f3e0;}
+.lightgrey-box {background: #f7f0e4;}
+.grey-box {background: #f4f4f4;}
+.dark-box {background: #000;color: #fff; letter-spacing: 0.5px}
+.dark-box a:hover {color:#fff;}
+
+/* Legacy: Paragraphs */
+
+.white-box p,
+.blue-box p,
+.yellow-box p,
+.red-box p,
+.green-box p,
+.lightgrey-box p,
+.grey-box p,
+.dark-box p
+{margin-top:0;padding-top:0;}
+
+/* Legacy: Last Paragraph */
+
+.white-box p:last-child,
+.blue-box p:last-child,
+.yellow-box p:last-child,
+.red-box p:last-child,
+.green-box p:last-child,
+.lightgrey-box p:last-child,
+.grey-box p:last-child,
+.dark-box p:last-child
+{margin-bottom:0;padding-bottom:0;}
+
+/* Legacy: Included Lists */
+
+.white-box ol,
+.blue-box ol,
+.yellow-box ol,
+.red-box ol,
+.green-box ol,
+.lightgrey-box ol,
+.grey-box ol,
+.dark-box ol, 
+.white-box ul,
+.blue-box ul,
+.yellow-box ul,
+.red-box ul,
+.green-box ul,
+.lightgrey-box ul,
+.grey-box ul,
+.dark-box ul {
+	margin:0px;
+  padding-left:1.7rem;
+}
+
+/* 
+14. Creative Commons
+*/
+
+/* If no license is assigned */
+
+.creativecommons:empty {
+  display:none;
+}
+
+/* Styling Licence Exclude */
+
+.creativecommons-exclude {
+  font-style:italic
+}
+
+/* 
+15. Listen
+*/
+
+.entry-content ol li {
+  margin-bottom:7px;
+} 
+
+.entry-content ol {
+  padding-left:2rem;
+} 
+
+/* 
+16. Images
+*/
+
+figcaption {
+  font-size:0.9rem;
+  font-style:italic;
+} 
+
+p:has(img) {
+  line-height:0.9rem;
+} 
+
+/* Spacing to aocb Button (if Box is last Element in Post) */
+
+.post-type-archive-ello .entry-content p:last-child img {
+  margin-bottom:0.7rem !important;
+}
+
+
+/* 
+17. Quotes
+*/
+
+/* Legacy */
+
+blockquote {
+  font-size:1.5rem;
+  font-style: italic;
+  margin-right:0px;
+  margin-left:0px;
+}
+
+cite {
+  display:block;
+  font-size:0.95rem;
+  text-align:right;
+}
+
+/*
+18. Embed Privacy
+*/
+
+/* Link Color */
+
+.embed-privacy-overlay a {
+	color:white !important;
+	border-color: white !important;
+}
+
+/* Hide Something */
+
+.embed-privacy-input-wrapper {
+	display:none;
+}
+
+/*
+19. Tables
+*/
+
+table {
+  border-bottom: 1px solid #ddd;
+  font-size:0.9rem;
+  width:100%;
+}
+
+tbody {
+  text-align:left;
+}
+
+table th {
+  font-weight:bold;
+  padding-top:7px;
+  padding-bottom:7px;
+}
+
+table td {
+  border-top: 1px solid #ddd;
+  padding-top:7px;
+  padding-bottom:7px;
+}
+
+/* 
+20. Article Specified 
+*/
+
+/* Verloren im Unterbewusstsein */
+
+span.font-color-pattern-black
+{
+background:rgb(51, 51, 51);
+color:rgb(255, 255, 255);
+}
+span.font-color-pattern-yellow
+{
+background:rgb(247, 236, 105);
+color:rgb(51, 51, 51);
+}
+span.font-color-pattern-grey
+{
+background:rgb(211, 211, 211);
+}
+span.font-color-pattern-blue
+{
+background:rgb(86, 179, 183);
+color:rgb(255, 255, 255);
+}
+
+/* 
+21. iframe
+*/
+
+/* Created for YouTube Embeds */
+
+iframe {
+  width:100%;
+  height:100%;
+}
+
+/* 
+22. Featured Image
+*/
+
+/* Reset to Original Size */
+
+.blog .post .wp-block-post-featured-image img {
+  width:auto;
+}
+
+/* 
+23. Video
+*/
+
+/* Legacy: Spacing to aocb Button (if Video is last Element in Post) */
+
+.post-type-archive-ello .wp-video:last-child {
+  margin-bottom:0.7rem !important;
+}
+
+/* 
+24. Pinseldisko
+*/
+
+/* Hide H1 on Single Post */
+
+.single-pinseldisko h1 {
+  display:none;
+}
+
+/* Hide Sketchnote Information @ all other posts */
+
+.sketchnote-info:empty {
+  display:none;
+}
+
+/* Make Content italic */
+
+.sketchnote-info * {
+  font-style: italic;
+}
+
+/* 
+25. Podcast
+*/
+
+/* Add Spacing after Contributor Box */
+
+.post-type-archive-podcast .podlove-contributors-cards {
+  margin-bottom:1.7rem;
+}
+
+/* No Hover @ Contribution Box */
+
+.podlove-contributors-cards a {
+  border: 0 !important;
+  border-color:transparent !important;
+  text-decoration: none !important;
+}
+
+/* Download Buttons */
+
+ul.episode_download_list
+{
+	padding-left:0 !important;
+	margin-top:10px;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+.episode_download_list li
+{
+	color:white;
+	height:0;
+	width:0;
+}
+
+.episode_download_list a
+{
+display: inline-block;
+margin: 0 0 0px;
+padding: 12px 18px 11px;
+overflow: hidden;
+cursor: pointer;
+font-size: 1rem;
+text-align: center;
+font-weight: normal;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-decoration: none !important;
+border-bottom:0 !important;
+margin-right:10px;
+background: #81c7d4;
+color: #fff !important;
+}
+
+.episode_download_list a:hover
+{
+background:#459baf; color:#fff
+}
+
+.episode_download_list a .size
+{
+font-size: 0.7rem;
+margin-left:5px;
+}
+
+/* 
+26. Raketenstaub
+*/
+
+/* Hide Titel */
+
+.post-type-archive-raketenstaub h2.wp-block-post-title,
+.single-raketenstaub h1.wp-block-post-title {
+  display:none;
+}
+
+/* Tags */
+
+.post-type-archive-raketenstaub .raketenstaub a,
+.single-raketenstaub article a {
+  color:black;
+  text-decoration: none;
+  border-bottom: 0px transparent #000;
+  display: block;
+  cursor:auto;
+}
+
+/* Next */
+
+.single-raketenstaub .wp-block-post-navigation-link a {
+  display: inline;
+}
+.single-raketenstaub .wp-block-post-navigation-link {
+  margin-right: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Hide Separator @ Archive */
+
+.post-type-archive-raketenstaub .wp-block-post-terms__separator,
+.single-raketenstaub article .wp-block-post-terms__separator {
+  display:none;
+}
+
+/* Spacing @ Tags */
+
+.post-type-archive-raketenstaub .raketenstaub .wp-block-post-terms,
+.single-raketenstaub article .wp-block-post-terms  {
+  margin-top:0.3rem !important;
+}
+
+/* Italic @ Category */
+
+.post-type-archive-raketenstaub .raketenstaub .taxonomy-fotoalbum,
+.single-raketenstaub article .taxonomy-fotoalbum {
+  font-style: italic;
+}
+
+/* 
+27. WordPress
+*/
+
+/* More Information */
+
+.wordpress a, .wordpress a:hover {
+  color:black;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  line-height: 1.4rem;
+  padding-top:0rem;
+  margin-top:0.5rem !important;
+}
+
+.wordpress figure a, .wordpress figure a:hover  {
+  text-decoration: none;
+  border-bottom: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+/* 
+28. TootPress 
+*/
+
+.tootpress-toot {
+  margin-bottom: 60px;
+  clear:both;
+}
+
+.tootpress-toot-symbol {
+  float:left !important;
+  margin-top:5px;
+}
+
+.toot-content, .toot-date, .toot-image {
+  margin-left:60px;
+}
+
+.toot-date p {
+  margin-bottom:0px;
+  font-size:95%;
+}
+
+.toot-content p {
+  margin-top:3px;
+  margin-bottom:10px;
+}
+
+.toot-content a {
+  word-break: break-all;
+}
+
+.toot-image img {
+  max-width: 100%;
+}
+
+.toot-image-gallery {
+  margin-bottom:5px;
+}
+
+.tootpress_nav {
+  margin-top:100px;
+  width:100%;
+}
+
+.tootpress_nav_number {
+  margin-right:34px;
+  font-size:120%;
+  color:#000 !important;
+  padding-top:40px !important;
+}
+
+a.tootpress_nav_number  {
+  text-decoration:none !important;
+  border-bottom: 0px!important;
+}
+
+.tootpress_nav .active {
+  font-weight:bold !important;
+}
+
+.tootpress_nav_dots {
+  margin-right:30px;
+}
+
+.tootpress_nav_standard_newer_toots {
+  margin-right:30px;
+}
+
+.tootpress-is-here h1.entry-title {
+  display:none;
+}
+
+.tootpress-is-here .site-content article {
+  max-width:100%;
+}
+
+.tootpress-is-here .entry-content {
+  max-width:100% !important;
+}
+
+/* 
+29. Mathilda 
+*/
+
+#mathilda-area
+{margin-top:0px;}
+
+.mathilda-tweet
+{margin-bottom:60px;clear:both;}
+
+.mathilda-tweet-symbol
+{float:left;box-shadow:none !important;}
+
+.entry-content p.mathilda-tweet-dateandtime
+{margin-bottom:3px;font-size:80%;}
+
+.mathilda-tweet-text, .mathilda-tweet-url, .mathilda-tweet-dateandtime, .mathilda-tweet-image
+{margin-left:50px;}
+
+.mathilda-tweet-text
+{margin-bottom:10px;margin-top:0px;}
+
+.mathilda-tweet-image
+{max-width:80%;}
+
+.mathilda-tweet-video-link
+{position:relative;top:7px;padding-left:50px;overflow:hidden; word-break: break-all;}
+
+.entry-content .mathilda-url-follows
+{margin-bottom:2px;}
+
+.mathilda_bottom_forward
+{margin-top:40px;margin-bottom:0;font-size:120%;}
+
+.mathilda_bottom_forward_number, .mathilda_extend
+{margin-right:34px;float:left;padding-top:30px;box-shadow:none !important;border-bottom:0 !important;text-decoration:none !important;}
+
+.mathilda_bottom_new_tweets, .mathilda_bottom_previous_tweets 
+{margin-bottom:30px;}
+
+.mathilda_bottom_previous_tweets 
+{margin-right:30px;}
+
+.mathilda_bottom_new_tweets 
+{text-align:right;float:right;}
+
+.mathilda_bottom_forward .active
+{font-weight:bold;}
+
+.mathilda-embed
+{margin-top:10px;}
+
+iframe.wp-embedded-content
+{margin-left: 0 !important;
+padding-left: 0 !important;}
+
+.mathilda-tweet a
+{color:darkred !important;text-decoration: none;border:0px;}
+
+.mathilda-tweet-url
+{overflow:hidden;margin-top:-3px; }
+
+a.mathilda-tweet-url-link
+{border-bottom-color:darkred !important;overflow:hidden; word-break: break-all;}
+
+a.mathilda-hashtag, a.mathilda-mention
+{border-bottom-width:0;}
+
+.mathilda-tweet-text
+{margin-bottom:10px;}
+
+.mathilda-is-here h1.entry-title
+{display:none;}
+
+.mathilda-is-here .site-content article
+{max-width:100%;}
+
+.mathilda-is-here .entry-content
+{max-width:100% !important;}
+
+.mathilda_bottom_forward
+{width:100% !important;}
+
+.mathilda_bottom_forward a {margin-right:34px;color:#000 !important;padding-top:40px !important;}
+
+blockquote.wp-embedded-content {margin-left: 0;padding-left: 0;}
+
+iframe.twitter-tweet
+{padding-left:0;}
+
+/* 
+30. Archives 
+*/
+
+/* Raketenstaub @ Tag Archive */
+
+.tag .type-raketenstaub .wp-block-post-title,
+.tag .type-raketenstaub .wp-block-post-date {
+  display:none;
+}
+
+/* Featured Images @ Tag Archive */
+
+.tag .type-podcast .wp-block-post-featured-image,
+.tag .type-pinseldisko .wp-block-post-featured-image,
+.tag .type-post .wp-block-post-featured-image {
+  display:none;
+}
+
+/* Featured Images @ Date Archive */
+
+.date .type-podcast .wp-block-post-featured-image,
+.date .type-pinseldisko .wp-block-post-featured-image,
+.date .type-post .wp-block-post-featured-image {
+  display:none;
+}
+
+/* Featured Images @ Search */
+
+.search .type-podcast .wp-block-post-featured-image,
+.search .type-pinseldisko .wp-block-post-featured-image,
+.search .type-post .wp-block-post-featured-image {
+  display:none;
+}
