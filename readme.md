@@ -167,16 +167,12 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
-* Changed: Spacer @ Index Archive
+* Changed: Top Spacer @ Index Archive
 * Changed: Font Size (Toot Date)
 * Fixed: Spacing (Links without Block Container)
 
 ### 100
 
-<<<<<<< Updated upstream
-Release: 27.06.2024
-=======
 Released: 27.06.2024
->>>>>>> Stashed changes
 
 * Initial Theme Release
