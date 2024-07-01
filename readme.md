@@ -174,6 +174,5 @@ Release pending
 ### 100
 
 Released: 27.06.2024
->>>>>>> Stashed changes
 
 * Initial Theme Release
