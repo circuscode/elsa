@@ -290,6 +290,14 @@ p:has(.more-link) {
   margin-top:3rem;
 }
 
+/* Ello: Spacing of a after p */
+
+.post-type-archive-ello p + a,
+.single-ello p + a {
+  display: block;
+  width:max-content;
+}
+
 /* 
 8. Comments
 */
@@ -903,7 +911,7 @@ margin-left:5px;
 
 .toot-date p {
   margin-bottom:0px;
-  font-size:95%;
+  font-size:80%;
 }
 
 .toot-content p {
