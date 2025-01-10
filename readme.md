@@ -170,6 +170,7 @@ Release pending
 * Changed: Top Spacer @ Index Archive
 * Changed: Font Size (Toot Date)
 * Fixed: Spacing (Links without Block Container)
+* Fixed: Layout @ Wide Screen (Troets, Tweets)
 
 ### 100
 
