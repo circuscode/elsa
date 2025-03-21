@@ -972,6 +972,10 @@ a.tootpress_nav_number  {
   max-width:100% !important;
 }
 
+.toot-content a .invisible {
+  display:initial;
+}
+
 /* 
 29. Mathilda 
 */
