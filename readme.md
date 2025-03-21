@@ -167,6 +167,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Feature: Mastodon Shortlink Transformation
 * Changed: Top Spacer @ Index Archive
 * Changed: Font Size (Toot Date)
 * Fixed: Spacing (Links without Block Container)
