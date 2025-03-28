@@ -168,6 +168,7 @@ This project is licensed under the GPL3 License.
 Release pending
 
 * Feature: Mastodon Shortlink Transformation
+* Added: Styles for Podlove Global Contributor Shortcode
 * Changed: Top Spacer @ Index Archive
 * Changed: Font Size (Toot Date)
 * Fixed: Spacing (Links without Block Container)
