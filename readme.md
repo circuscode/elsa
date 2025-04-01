@@ -27,7 +27,7 @@ All custom post types have an archive and single template.
 * Ello (unmus Custom Plugin)
 * Raketenstaub (unmus Custom Plugin)
 
-# Supported Custom Taxonomies
+## Supported Custom Taxonomies
 
 All custom taxonomies have an archive template.
 
