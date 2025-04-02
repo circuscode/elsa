@@ -173,6 +173,7 @@ Release pending
 * Changed: Font Size (Toot Date)
 * Fixed: Spacing (Links without Block Container)
 * Fixed: Layout @ Wide Screen (Troets, Tweets)
+* Fixed: Post Format CSS
 
 ### 100
 

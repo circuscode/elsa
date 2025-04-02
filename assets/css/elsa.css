@@ -430,8 +430,9 @@ p:has(.more-link) {
 
 /* No Headline & Link in Archive */
 
-.post-type-archive-ello .format-quote h1,
+.post-type-archive-ello .format-quote .elsa-titledate,
 .post-type-archive-ello .format-quote .elsa-aocb,
+.post-type-archive-ello .format-image .elsa-titledate,
 .post-type-archive-ello .format-image .elsa-aocb {
   display:none;
 }
@@ -455,11 +456,11 @@ p:has(.more-link) {
 .single-ello.single-format-quote .meta,
 .single-ello.single-format-quote .about,
 .single-ello.single-format-quote .wp-block-comments,
-.single-ello.single-format-image .h1,
+.single-ello.single-format-image h1,
 .single-ello.single-format-image .meta,
 .single-ello.single-format-image .about,
 .single-ello.single-format-image .wp-block-comments {
-  display:none;
+  display:none !important;
 }
 
 /* 
