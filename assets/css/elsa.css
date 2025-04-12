@@ -1145,3 +1145,8 @@ iframe.twitter-tweet
 .mc4wp-response .mc4wp-alert {
   color:darkred;
 }
+
+.mc4wp-procaptcha__captcha {
+  margin-top: -24px !important; 
+  margin-bottom: 10px !important;
+}
