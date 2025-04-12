@@ -103,6 +103,7 @@ In addition styles of the following plugins are supported.
 
 * Embed Privacy
 * Lightweight Subscribe Comments
+* Mailchimp
 * Podlove Publisher
 * Mathilda
 * TootPress
@@ -168,6 +169,7 @@ This project is licensed under the GPL3 License.
 Release pending
 
 * Feature: Mastodon Shortlink Transformation
+* Added: Styles for Mailchimp Subscribe Form
 * Added: Styles for Podlove Global Contributor Shortcode
 * Changed: Top Spacer @ Index Archive
 * Changed: Font Size (Toot Date)
