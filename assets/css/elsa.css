@@ -32,6 +32,7 @@ Table of Contents
 28 - TootPress
 29 - Mathilda
 30 - Archives
+31 - Mailchimp
 ---------------*/
 
 /*
@@ -1135,4 +1136,12 @@ iframe.twitter-tweet
 .search .type-pinseldisko .wp-block-post-featured-image,
 .search .type-post .wp-block-post-featured-image {
   display:none;
+}
+
+/* 
+31. Mailchimp 
+*/
+
+.mc4wp-response .mc4wp-alert {
+  color:darkred;
 }
