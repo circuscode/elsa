@@ -1151,6 +1151,6 @@ iframe.twitter-tweet
   margin-bottom: 10px !important;
 }
 
-.mc4wp-procaptcha__validation-error {
-  margin-bottom: 30px !important;
+p.mc4wp-procaptcha__validation-error[style*="visibility: visible"] {
+	margin-bottom:30px !important;
 }
