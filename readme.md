@@ -166,7 +166,7 @@ This project is licensed under the GPL3 License.
 
 ### 101
 
-Release pending
+Released: 17.05.2025
 
 * Feature: Mastodon Shortlink Transformation
 * Added: Styles for Mailchimp Subscribe Form
