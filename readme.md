@@ -72,6 +72,12 @@ Post Formats are designed for the usage with CPT Ello.
 * Search Toggle (Jquery)
 * Search Input Field Clearing (Jquery)
 
+## Plugin CSS
+
+* Embed Privacy
+* Envira
+* Mailchimp
+
 ## Further Extensions
 
 * Shortcodes
@@ -168,7 +174,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
-* No new things until now
+* Changed: Lightbox / Position of Close & Next
 
 ### 101
 

@@ -474,6 +474,16 @@ p:has(.more-link) {
   margin-top:1.7rem;
 }
 
+/* Lightbox */
+
+.envirabox-toolbar {
+  padding-right:5px;
+}
+
+.envirabox-arrow--right {
+  margin-right:7px;
+}
+
 /* 
 13. Boxes (Legacy)
 */
