@@ -72,12 +72,6 @@ Post Formats are designed for the usage with CPT Ello.
 * Search Toggle (Jquery)
 * Search Input Field Clearing (Jquery)
 
-## Plugin CSS
-
-* Embed Privacy
-* Envira
-* Mailchimp
-
 ## Further Extensions
 
 * Shortcodes
@@ -108,6 +102,7 @@ Following plugins are required at runtime.
 In addition styles of the following plugins are supported.
 
 * Embed Privacy
+* Envira
 * Lightweight Subscribe Comments
 * Mailchimp
 * Podlove Publisher
@@ -174,7 +169,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
-* Changed: Lightbox / Position of Close & Next
+* Changed: Envira Lightbox / Position of Close & Next Icons
 
 ### 101
 
