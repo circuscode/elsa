@@ -169,6 +169,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Changed: Styling of Comment Notification Checkbox
 * Changed: Envira Lightbox / Position of Close & Next Icons
 
 ### 101
