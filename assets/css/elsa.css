@@ -362,7 +362,7 @@ p:has(.more-link) {
   margin-top:0px;
   content: "";
   transform: scale(0);
-  background-color: #DB7093;
+  background-color: #ac1b1b;
 }
 
 .cnns-comment-subscription input[type="checkbox"]:checked::before {
