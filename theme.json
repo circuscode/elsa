@@ -166,6 +166,34 @@
 					}
 				}
 			},
+			"core/comment-content": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "#900"
+						},
+						"typography": {
+							"textDecoration": "none"
+						},
+						"border": {
+							"bottom": {
+								"width": "2px",
+								"color": "transparent",
+								"style": "solid"
+							}
+						},
+						":hover": {
+							"border": {
+								"bottom": {
+									"width": "2px",
+									"color": "#900",
+									"style": "solid"
+								}
+							}
+						}
+					}
+				}
+			},
 			"core/query-pagination": {
 						"color": {
 							"text": "black"
