@@ -934,7 +934,7 @@ margin-left:5px;
 }
 
 /* 
-28. TootPress 
+28. TootPress
 */
 
 .tootpress-toot {
@@ -942,7 +942,8 @@ margin-left:5px;
   clear:both;
 }
 
-.tootpress-toot-symbol {
+/* Remove .tootpress-toot-symbol after TootPress 0.5 Release */
+.tootpress-toot-symbol, .toot-symbol {
   float:left !important;
   margin-top:5px;
 }
@@ -969,7 +970,8 @@ margin-left:5px;
   max-width: 100%;
 }
 
-.toot-image-gallery {
+/* Remove .toot-image-gallery after TootPress 0.5 Release */
+.toot-image-gallery, .toot-gallery-image {
   margin-bottom:5px;
 }
 

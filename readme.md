@@ -171,6 +171,7 @@ Release pending
 
 * Added: TootPress Afterloop Styles
 * Added: Styles for Hyperlinks in Comments
+* Changed: Styling for TootPress 0.5
 * Changed: Styling of Comment Notification Checkbox
 * Changed: Envira Lightbox / Position of Close & Next Icons
 
