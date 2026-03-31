@@ -105,9 +105,10 @@ In addition styles of the following plugins are supported.
 * Envira
 * Lightweight Subscribe Comments
 * Mailchimp
+* Modula
 * Podlove Publisher
-* Mathilda
 * TootPress
+* Mathilda
 
 ## Custom Fields Dependencies
 
@@ -171,6 +172,7 @@ Release pending
 
 * Added: TootPress Afterloop Styles
 * Added: Styles for Hyperlinks in Comments
+* Added: Modula Lightbox Styles
 * Changed: Styling for TootPress 0.5
 * Changed: Styling of Comment Notification Checkbox
 * Changed: Envira Lightbox / Position of Close & Next Icons
